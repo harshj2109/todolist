@@ -2,26 +2,269 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.input1{
+  width: 700px;
+  font-size: 17px;
 }
+.btn{
+  font-size: 17px;
+  margin-left: 15px;
+}
+body{
+  position: relative;
+  box-sizing: border-box;
+}
+.section1{
+  position: absolute;
+  top: 620px;
+  left: 390px;
+  position: fixed;
+}
+/* .li-active{
+  color: green;
+}
+.btn2-active{
+  background-color: green;
+  color: white;
+} */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media only screen and (max-width:2720px) and (min-width:2560px) {
+  .head{
+    padding: 31px 0;
+    font-size: 33px;
+  }
+  .list1{
+    padding: 18px 50px;
+
+  }
+  .list1 h5{
+    font-size: 30px;
+  }
+  .list2{
+    padding: 18px 50px;
+  }
+  .list2 h5{
+    font-size: 30px;
+  }
+  .list2 button{
+    padding: 14px;
+    font-size: 24px;
+  }
+  .input1{
+    width: 898px;
+    font-size: 26px;
+  }
+  .btn{
+    font-size: 26px;
+  }
+
+  .section1{
+    
+    top: 1002px;
+    left: 800px;
+    
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media screen and (max-width:1439px) and (min-width:1023px){
+  .head{
+    padding: 15px 0;
+    font-size: 24px;
+  }
+  .list1{
+    padding: 0px 50px;
+
+  }
+  .list1 h5{
+    font-size: 15px;
+  }
+  .list2{
+    padding: 18px 50px;
+  }
+  .list2 h5{
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  .list2 button{
+    padding: 9px;
+    font-size: 14px;
+  }
+  .input1{
+    width: 555px;
+    font-size: 16px;
+  }
+  .btn{
+    font-size: 16px;
+  }
+
+  .section1{
+    
+    top: 535px;
+    left: 187px;
+    
+  }
+}
+
+
+@media screen and (max-width:1023px) and (min-width:767px){
+
+  .head{
+    padding: 15px 0;
+    font-size: 24px;
+  }
+  .list1{
+    padding: 0px 50px;
+  
+  }
+  .list1 h5{
+    font-size: 15px;
+  }
+  .list2{
+    padding: 8px 50px;
+  }
+  .list2 h5{
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  .list2 button{
+    padding: 9px;
+    font-size: 14px;
+  }
+  .input1{
+    width: 400px;
+    font-size: 15px;
+  }
+  .btn{
+    font-size: 15px;
+  }
+  
+  .section1{
+    
+    top: 535px;
+    left: 144px;
+    
+  }
+}
+
+@media screen and (max-width:768px) and (min-width:426px){
+
+  .head{
+    padding: 15px 0;
+    font-size: 24px;
+  }
+  .list1{
+    padding: 0px 50px;
+  
+  }
+  .list1 h5{
+    font-size: 15px;
+  }
+  .list2{
+    padding: 8px 50px;
+  }
+  .list2 h5{
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  .list2 button{
+    padding: 9px;
+    font-size: 14px;
+  }
+  .input1{
+    width: 400px;
+    font-size: 15px;
+  }
+  .btn{
+    font-size: 15px;
+  }
+  
+  .section1{
+    
+    top: 535px;
+    left: 144px;
+    
+  }
+}
+
+@media screen and (max-width:426px) and (min-width:376px){
+  .head{
+    padding: 15px 0;
+    font-size: 24px;
+  }
+  .list1{
+    padding: 0px 21px;
+  
+  }
+  .list1 h5{
+    font-size: 15px;
+  }
+  .list2{
+    padding: 8px 21px;
+  }
+  .list2 h5{
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  .list2 button{
+    padding: 9px;
+    font-size: 14px;
+  }
+  .input1{
+    width: 251px;
+    font-size: 15px;
+  }
+  .btn{
+    font-size: 15px;
+  }
+  
+  .section1{
+    
+    top: 550px;
+    left: 32px;
+    
+  }
+
+}
+
+@media screen and (max-width:375px){
+  .head{
+    padding: 15px 0;
+    font-size: 24px;
+  }
+  .list1{
+    padding: 0px 21px;
+  
+  }
+  .list1 h5{
+    font-size: 15px;
+  }
+  .list2{
+    padding: 8px 21px;
+  }
+  .list2 h5{
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  .list2 button{
+    padding: 9px;
+    font-size: 14px;
+  }
+  .input1{
+    width: 170px;
+    font-size: 15px;
+    padding: 10px;
+
+  }
+  .btn{
+    font-size: 15px;
+    padding: 10px;
+  }
+  
+  .section1{
+    
+    top: 557px;
+    left: 26px;
+    
+  }
+
 }
