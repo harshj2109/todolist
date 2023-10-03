@@ -11,13 +11,12 @@
   margin-left: 15px;
 }
 body{
-  position: relative;
   box-sizing: border-box;
 }
 .section1{
   position: fixed;
-  margin-top: 566px;
-  margin-left: 364px;
+  top: 612px;
+  left: 361px;
 }
 
 
@@ -54,13 +53,13 @@ body{
 
   .section1{
     
-    margin-left: 754px;
-    margin-top: 950px;
+    left: 754px;
+    top: 990px;
     
   }
 }
 
-@media screen and (max-width:1439px) and (min-width:1025px){
+/* @media screen and (max-width:1439px) and (min-width:1025px){
   .head{
     padding: 15px 0;
     font-size: 24px;
@@ -92,12 +91,10 @@ body{
   }
 
   .section1{
-    margin-left: 364px;
-    margin-top: 566px;
-    
-    
+    left: 364px;
+    top: 200px;
   }
-}
+} */
 
 
 @media screen and (max-width:1024px) and (min-width:769px){
@@ -133,14 +130,12 @@ body{
   }
   
   .section1{
-    
-    margin-left: 266px;
-    margin-top: 500px;
-    
+    left: 260px;
+    top: 541px;
   }
 }
 
-@media screen and (max-width:768px) and (min-width:426px){
+@media screen and (max-width:768px) and (min-width:427px){
 
   .head{
     padding: 15px 0;
@@ -173,10 +168,8 @@ body{
   }
   
   .section1{
-    
-    margin-left: 134px;
-    margin-top: 500px;
-    
+    left: 134px;
+    top: 550px;
   }
 }
 
@@ -213,8 +206,8 @@ body{
   
   .section1{
     
-    margin-left: 29px;
-    margin-top: 500px;
+    left: 29px;
+    top: 550px;
     
   }
 
@@ -256,8 +249,8 @@ body{
   
   .section1{
     
-    margin-left: 24px;
-    margin-top: 500px;
+    left: 24px;
+    top: 550px;
     
   }
 
@@ -299,8 +292,8 @@ body{
   
   .section1{
     
-    margin-left: 24px;
-    margin-top: 500px;
+    left: 24px;
+    top: 550px;
   }
 
 }
