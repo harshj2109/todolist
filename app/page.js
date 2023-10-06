@@ -1,29 +1,27 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const page = () => {
-
+  
+  const [task, settask] = useState("")
+  const [maintask, setmaintask] = useState([]) 
+  
   
 
   const noreload = (e)=>{
     e.preventDefault();
     setmaintask([...maintask,{task}])
     settask("");
-    
   }
 const deletehandler = (i)=>{
   let copytask = [...maintask];
   copytask.splice(i,1);
-  setmaintask(copytask)
-}  
-const completehandler = (i)=>{
-  const task  = document.getElementById("task");
-  task.classList.toggle("active");
-  console.log("hello")
-}
-  const [task, settask] = useState("")
-  const [maintask, setmaintask] = useState([])
+  setmaintask(copytask);
   
+
+}  
+ 
+    
   let render = <li className='px-5 list1'>
     <h5 className='font-bold'>No task available</h5>
   </li> 
@@ -33,17 +31,15 @@ const completehandler = (i)=>{
     render = maintask.map((t,i)=>{
       return(
 
-        <li  className='flex justify-between p-5 list2'>
+        <li  className='flex justify-between p-5 list2' id='list2'>
       <div>
         <h5 className='li-task' id='task'>{t.task}</h5>
       </div>
       <div>
       <button onClick={()=>{
         deletehandler(i);
-      }} className='bg-blue-800 text-white px-2 py-2 mr-3'>Delete</button>
-      <button onClick={()=>{
-        completehandler(i);
-      }} className='bg-blue-800 text-white px-2 py-2'>Completed</button>
+      }} className='bg-blue-800 text-white px-2 py-2'>Delete</button>
+      
       </div>
       
       </li>
