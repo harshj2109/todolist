@@ -3,28 +3,20 @@
 
 const page = () => {
 
-  const input1 = document.getElementsByClassName("input1")
-  function savedata() {
-    localStorage.setItem("data1", input1.value);
-  }
-  function showdata() {
-    input1.value = localStorage.getItem("data1");
-  }
+  
 
   const noreload = (e)=>{
     e.preventDefault();
     setmaintask([...maintask,{task}])
     settask("");
-    savedata();
-    showdata();
+    
 
   }
 const deletehandler = (i)=>{
   let copytask = [...maintask];
   copytask.splice(i,1);
   setmaintask(copytask)
-  savedata();
-  showdata();
+  ;
 
 
 }  
