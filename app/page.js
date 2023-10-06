@@ -1,16 +1,32 @@
 "use client"
-import React, { useState } from 'react'
+  import React, { useState } from 'react'
 
 const page = () => {
+
+  const input1 = document.getElementsByClassName("input1")
+  function savedata() {
+    localStorage.setItem("data1", input1.value);
+  }
+  function showdata() {
+    input1.value = localStorage.getItem("data1");
+  }
+
   const noreload = (e)=>{
     e.preventDefault();
     setmaintask([...maintask,{task}])
     settask("");
+    savedata();
+    showdata();
+
   }
 const deletehandler = (i)=>{
   let copytask = [...maintask];
   copytask.splice(i,1);
   setmaintask(copytask)
+  savedata();
+  showdata();
+
+
 }  
   const [task, settask] = useState("")
   const [maintask, setmaintask] = useState([])
@@ -31,7 +47,7 @@ const deletehandler = (i)=>{
       <div>
       <button onClick={()=>{
         deletehandler(i);
-        }} className='bg-blue-800 text-white px-2 py-2'>Delete</button>
+      }} className='bg-blue-800 text-white px-2 py-2'>Delete</button>
       </div>
       
       </li>
@@ -43,9 +59,11 @@ const deletehandler = (i)=>{
   
   return (
     <>
+    <div className="relative">
+
     <h1 className="head py-3 bg-blue-800 text-white text-center text-2xl">Your To-Do-List</h1>
 
-    <div className='text-center section1'>
+    <div className='text-center section1 mt-5 mb-5'>
     <form className='form' onSubmit={noreload}>
 
 
@@ -64,6 +82,8 @@ const deletehandler = (i)=>{
         {render}
       </ul>
     </div>
+    </div>
+    
     </>
   )
 }
