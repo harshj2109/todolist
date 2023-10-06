@@ -1,5 +1,5 @@
 "use client"
-  import React, { useState } from 'react'
+import React, { useState } from 'react'
 
 const page = () => {
 
@@ -10,16 +10,17 @@ const page = () => {
     setmaintask([...maintask,{task}])
     settask("");
     
-
   }
 const deletehandler = (i)=>{
   let copytask = [...maintask];
   copytask.splice(i,1);
   setmaintask(copytask)
-  ;
-
-
 }  
+const completehandler = (i)=>{
+  const task  = document.getElementById("task");
+  task.classList.toggle("active");
+  console.log("hello")
+}
   const [task, settask] = useState("")
   const [maintask, setmaintask] = useState([])
   
@@ -39,7 +40,10 @@ const deletehandler = (i)=>{
       <div>
       <button onClick={()=>{
         deletehandler(i);
-      }} className='bg-blue-800 text-white px-2 py-2'>Delete</button>
+      }} className='bg-blue-800 text-white px-2 py-2 mr-3'>Delete</button>
+      <button onClick={()=>{
+        completehandler(i);
+      }} className='bg-blue-800 text-white px-2 py-2'>Completed</button>
       </div>
       
       </li>
@@ -63,7 +67,7 @@ const deletehandler = (i)=>{
       onChange={(e)=>{
         settask(e.target.value)
       }}/>
-
+      
       <button className=' bg-blue-800 text-white border-2  border-slate-500 px-5 py-3 btn'>Add Task</button>
     
     </form>
