@@ -13,11 +13,6 @@
 body{
   box-sizing: border-box;
 }
-.section1{
-  position: fixed;
-  top: 612px;
-  left: 361px;
-}
 
 
 
@@ -51,50 +46,14 @@ body{
     font-size: 26px;
   }
 
-  .section1{
+  /* .section1{
     
     left: 754px;
     top: 990px;
     
-  }
+  } */
 }
 
-/* @media screen and (max-width:1439px) and (min-width:1025px){
-  .head{
-    padding: 15px 0;
-    font-size: 24px;
-  }
-  .list1{
-    padding: 0px 50px;
-
-  }
-  .list1 h5{
-    font-size: 15px;
-  }
-  .list2{
-    padding: 18px 50px;
-  }
-  .list2 h5{
-    padding: 8px 0;
-    font-size: 15px;
-  }
-  .list2 button{
-    padding: 9px;
-    font-size: 14px;
-  }
-  .input1{
-    width: 555px;
-    font-size: 16px;
-  }
-  .btn{
-    font-size: 16px;
-  }
-
-  .section1{
-    left: 364px;
-    top: 200px;
-  }
-} */
 
 
 @media screen and (max-width:1024px) and (min-width:769px){
@@ -129,10 +88,10 @@ body{
     font-size: 15px;
   }
   
-  .section1{
+  /* .section1{
     left: 260px;
     top: 541px;
-  }
+  } */
 }
 
 @media screen and (max-width:768px) and (min-width:427px){
@@ -167,10 +126,10 @@ body{
     font-size: 15px;
   }
   
-  .section1{
+  /* .section1{
     left: 134px;
     top: 550px;
-  }
+  } */
 }
 
 @media screen and (max-width:426px) and (min-width:376px){
@@ -204,12 +163,12 @@ body{
     font-size: 15px;
   }
   
-  .section1{
+  /* .section1{
     
     left: 29px;
     top: 550px;
     
-  }
+  } */
 
 }
 
@@ -247,12 +206,12 @@ body{
     padding: 10px;
   }
   
-  .section1{
+  /* .section1{
     
     left: 24px;
     top: 550px;
     
-  }
+  } */
 
 }
 
@@ -290,10 +249,9 @@ body{
     padding: 10px;
   }
   
-  .section1{
-    
+  /* .section1{
     left: 24px;
     top: 550px;
-  }
+  } */
 
 }
